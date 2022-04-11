@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/22ae22c687.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <form action="">
+
+        <div class="container">
+            <div class="heading">
+                <h1>Payment form example</h1>
+            </div>
+            <div class="row">
+                <div class="section">
+                    <label for="card">Card #</label>
+                    <input type="number" placeholder="XXXXXXXXXXXXXX" required>
+                </div>
+                <div class="section">
+                    <label for="cvc"> CVC#</label>
+                    <input type="number" placeholder="0000" required>
+                </div>
+                <div class="section">
+                    <label for="amount">Amount</label>
+                    <input type="number" placeholder="Amount" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="section">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="section">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="section">
+                    <label for="city">City</label>
+                    <input type="text" name="" id="city" required>
+                </div>
+                <div class="section">
+                    <label for="state">State</label>
+                    <select name="" id="state" required>
+                        <option value="">Pick a state</option>
+                        <option value="">Pick another state</option>
+                    </select>
+                </div>
+                <div class="section">
+                    <label for="postal">Postal Code</label>
+                    <input type="number" id="postal" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="section">
+                    <p>We accept:</p>
+                    <div class="card">
+                        <input type="radio" name="card" id="mastercard">
+                        <label for="mastercard"><i class="fa-brands fa-cc-mastercard"></i></label>
+
+                        <input type="radio" name="card" id="visa">
+                        <label for="visa"><i class="fa-brands fa-cc-visa"></i></label>
+
+                        <input type="radio" name="card" id="dinnersclub">
+                        <label for="dinnersclub"><i class="fa-brands fa-cc-diners-club"></i></label>
+
+                        <input type="radio" name="card" id="americanexpress">
+                        <label for="americanexpress"><i class="fa-brands fa-cc-amex"></i></label>
+                    </div>
+
+                </div>
+
+                <div class="section">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <p>Add any notes here.</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <button id="cancel">Cancel</button>
+                <button id="send">Send</button>
+            </div>
+
+        </div>
+    </form>
+
+
+
+</body>
+
+</html>
